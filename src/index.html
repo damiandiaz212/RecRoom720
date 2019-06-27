@@ -19,53 +19,7 @@
     
   </head>
   <body style="background-color: lightslategrey; color: white">
-
-    <!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-                <img src="/Users/damian/Desktop/hackathon2019/images/ruby.png" style="width: 40px">&nbsp;&nbsp;
-          RecRoom720
-        </a>
-      </nav>
-
-    </br>
-    
-    <div class="container">
-      <div class="row" >
-        <div class="col-sm-4" style="align-content: center; padding-left: 90px">
-          <img src="/Users/damian/Desktop/hackathon2019/images/billiard.png" style="width: 200px"/>
-        </div>
-        <div class="col-sm-4" style="align-content: center; padding-left: 90px">
-          <img
-            src="/Users/damian/Desktop/hackathon2019/images/game-controller.png" style="width: 200px"
-          />
-        </div>
-        <div class="col-sm-4" style="align-content: center; padding-left: 90px">
-          <img src="/Users/damian/Desktop/hackathon2019/images/ping-pong.png" style="width: 200px"/>
-        </div>
-      </div>
-    </br>
-      <div class="row">
-        <div class="col-sm-4" style="align-content: center; text-align: center">
-                <a href="#" class="btn btn-lg btn-danger btn-block"><strong>Floor 2</strong></a>
-                <a href="#" class="btn btn-lg btn-danger btn-block"><strong>Floor 4</strong></a>
-                <a href="#" class="btn btn-lg btn-success btn-block"><strong>Floor 6</strong></a>
-        </div>
-        <div class="col-sm-4" style="align-content: center; text-align: center">
-                <a href="#" class="btn btn-lg btn-secondary btn-block disabled"><strong>Floor 2</strong></a>
-                <a href="#" class="btn btn-lg btn-success btn-block"><strong>Floor 4</strong></a>
-                <a href="#" class="btn btn-lg btn-success btn-block"><strong>Floor 6</strong></a>
-        </div>
-        <div class="col-sm-4" style="align-content: center; text-align: center">
-                <a href="#" class="btn btn-lg btn-secondary btn-block disabled"><strong>Floor 2</strong></a>
-                <a href="#" class="btn btn-lg btn-secondary btn-block disabled"><strong>Floor 4</strong></a>
-                <a href="#" class="btn btn-lg btn-secondary btn-block disabled"><strong>Floor 6</strong></a>
-      </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
+      <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
@@ -80,5 +34,57 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+                <img src="https://github.com/damiandiaz212/RecRoom720/blob/master/images/ruby.png?raw=true" style="width: 40px">&nbsp;&nbsp;
+          RecRoom720
+        </a>
+      </nav>
+
+    </br>
+    
+    <div class="container">
+      <div class="row" >
+        <div class="col-sm-4" style="align-content: center; padding-left: 90px">
+          <img src="https://github.com/damiandiaz212/RecRoom720/blob/master/images/billiard.png?raw=true" style="width: 200px"/>
+        </div>
+        <div class="col-sm-4" style="align-content: center; padding-left: 90px">
+          <img
+            src="https://github.com/damiandiaz212/RecRoom720/blob/master/images/game-controller.png?raw=true" style="width: 200px"
+          />
+        </div>
+        <div class="col-sm-4" style="align-content: center; padding-left: 90px">
+          <img src="https://github.com/damiandiaz212/RecRoom720/blob/master/images/ping-pong.png?raw=true" style="width: 200px"/>
+        </div>
+      </div>
+    </br>
+      <div class="row">
+        <div class="col-sm-4" style="align-content: center; text-align: center">
+                <button class="btn btn-lg btn-danger btn-block"><strong>Floor 2</strong></button>
+                <button class="btn btn-lg btn-danger btn-block"><strong>Floor 4</strong></button>
+                <button class="btn btn-lg btn-success btn-block"><strong>Floor 6</strong></button>
+        </div>
+        <div class="col-sm-4" style="align-content: center; text-align: center">
+                <button class="btn btn-lg btn-danger btn-block"><strong>Floor 2</strong></button>
+                <button class="btn btn-lg btn-danger btn-block"><strong>Floor 4</strong></button>
+                <button class="btn btn-lg btn-success btn-block"><strong>Floor 6</strong></button>
+        </div>
+        <div class="col-sm-4" style="align-content: center; text-align: center">
+            <button class="btn btn-lg btn-danger btn-block"><strong>Floor 2</strong></button>
+            <button class="btn btn-lg btn-danger btn-block"><strong>Floor 4</strong></button>
+            <button class="btn btn-lg btn-success btn-block"><strong>Floor 6</strong></button>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $(this).toggleClass("btn-danger");
+          $(this).toggleClass("btn-success");
+        });
+      });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   </body>
 </html>
